@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="day">
+		
+		<div class="horse">
+			<div class="question">
+			<a id="day" href="javascript:;" class="btn"> Day </a>
+			or
+			<a id="night" href="javascript:;" class="btn"> Night </a>?
+		</div>
+		<div class="horse-body"></div>
+		<div class="leg-back"></div>
+		<div class="leg-back2"></div>
+		<div class="leg-front"></div>
+		<div class="leg-front2"></div>
+	</div>
+	<div class="clouds"></div>
+	<div class="sun"></div>
+	<div class="stars"></div>
+	<div class="bg"></div>
+	<div class="shadow"></div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script>
+	$(function() {	
+		var body = $('body');
+
+		$('#day').on('click', function() {
+			body.removeClass().addClass('day')
+		});
+		$('#night').on('click', function() {
+			body.removeClass().addClass('night')
+		});
+
+	});
+
+	</script>	
+</body>
+</html>
